@@ -1,0 +1,98 @@
+:root {
+  --theme-color : #c0d8fc ;
+  --theme-color-dark1 : rgb(0, 44, 102) ;
+}
+
+#footer {
+  color: var(--theme-color-dark1) ;
+  margin : 0px;
+}
+
+#footerDIV {
+background-color: var(--theme-color) ;
+}
+
+#header {
+  background-color: var(--theme-color) ;
+  color: var(--theme-color-dark1)
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.UI_buttons
+{
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 5%;
+  height: 48px ;
+  width: 96px ;
+  margin: 10px;
+  background-color: white;
+  color: var(--theme-color-dark1) ;
+}
+
+.UI_buttons:hover
+{
+  border: none;
+  border-radius: 5%;
+  height: 48px ;
+  width: 96px ;
+  margin: 10px;
+  color: white;
+  background-color: var(--theme-color-dark1) ;
+  transition-property: "background-color color";
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+}
